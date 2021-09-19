@@ -22,6 +22,7 @@
     --fontSubTitulo: 'Balsamiq Sans', cursive;
 }
 
+
 body {
     height: 100vh;
     background-color: #e0e0e0;
@@ -312,14 +313,14 @@ footer p {
     place-items: center;
 }
 
-.acept-cookies {
+.accept-cookies {
     width: 100%;
     min-height: 8vh;
     background-color: var(--cor5);
     position: fixed;
     bottom: 0;
     box-shadow: -1px -2px 15px #00000070;
-    display: flex;
+    display: flex !important;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -329,12 +330,12 @@ footer p {
     padding: 20px;
 }
 
-.acept-cookies a {
+.accept-cookies a {
     text-decoration: none;
     color: #85bde2;
 }
 
-.acept-cookies a:hover {
+.accept-cookies a:hover {
     text-decoration: underline;
 }
 

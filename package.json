@@ -19,6 +19,7 @@
   "dependencies": {
     "cookie-js": "0.0.1",
     "core-js": "^3.17.3",
+    "js-cookie": "^3.0.1",
     "regenerator-runtime": "^0.13.9"
   }
 }
