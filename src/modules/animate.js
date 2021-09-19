@@ -14,9 +14,10 @@ if ( anime.length ) {
     }));
 };
 
+console.log('Opa')
+
 const to_top = document.querySelector('.smooth-to-top');
 to_top.addEventListener('click', () => {
-    console.log('Opa')
     window.scroll({
         top: 0,
         behavior: 'smooth'
