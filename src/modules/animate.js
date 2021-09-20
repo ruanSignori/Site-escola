@@ -1,7 +1,7 @@
 
 const anime = document.querySelectorAll('[data-anime]');
 
-if ( anime.length ) {
+if (anime.length) {
     (window.addEventListener('scroll', function(){
         const windowTop = window.pageYOffset + (( window.innerHeight * 3) / 4 );
         anime.forEach( function (e) {
@@ -14,11 +14,16 @@ if ( anime.length ) {
     }));
 };
 
+
 const to_top = document.querySelector('.smooth-to-top');
+
+window.addEventListener('scroll', () => {
+    to_top.style.opacity = 1
+})
+
 to_top.addEventListener('click', () => {
     window.scroll({
         top: 0,
         behavior: 'smooth'
     });
 })
-

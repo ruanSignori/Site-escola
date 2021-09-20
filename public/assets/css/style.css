@@ -1,9 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Bevan&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -18,8 +16,7 @@
     --cor4: #184361;
     --cor5: #143E5C;
     --font:'Roboto', sans-serif;
-    --fontTitulo: 'Balsamiq Sans', 'Bevan', cursive;
-    --fontSubTitulo: 'Balsamiq Sans', cursive;
+    --fontTitulo: 'Heebo', sans-serif;
 }
 
 
@@ -179,7 +176,7 @@ img {
 article h2 {
     margin-top: 30px;
     text-indent: 30px;
-    font-family: var(--fontSubTitulo);
+    font-family: var(--fontTitulo);
 }
 
 .img-history {
@@ -213,7 +210,7 @@ article h2 {
 
 .development-game h2 {
     text-indent: 30px;
-    font-family: var(--fontSubTitulo);
+    font-family: var(--fontTitulo);
 }
 
 
@@ -243,7 +240,7 @@ aside {
 
 aside h2 {
     text-indent: 30px;
-    font-family: var(--fontSubTitulo);
+    font-family: var(--fontTitulo);
 }
 
 .animate-before-after {
@@ -325,7 +322,6 @@ footer p {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    align-items: center;
     color: #ffffff;
     font-size: 0.8em;
     padding: 20px;
@@ -363,6 +359,7 @@ footer p {
     border-radius: 50%;
     display: grid;
     place-items: center;
+    opacity: 0;
 }
 
 .smooth-to-top:hover {
