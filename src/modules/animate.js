@@ -28,3 +28,7 @@ to_top.addEventListener('click', () => {
         behavior: 'smooth'
     });
 })
+
+
+ScrollReveal().reveal('video', { delay: 300 });
+ScrollReveal().reveal('.paragraph', { delay: 80 })
