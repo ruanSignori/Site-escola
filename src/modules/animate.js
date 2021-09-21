@@ -18,7 +18,8 @@ if (anime.length) {
 const to_top = document.querySelector('.smooth-to-top');
 
 window.addEventListener('scroll', () => {
-    to_top.style.opacity = 1
+    to_top.style.animation = "opacity 1s";
+    to_top.style.opacity = 1;
 })
 
 to_top.addEventListener('click', () => {
