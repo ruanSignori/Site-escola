@@ -1,20 +1,4 @@
 
-const anime = document.querySelectorAll('[data-anime]');
-
-if (anime.length) {
-    (window.addEventListener('scroll', function(){
-        const windowTop = window.pageYOffset + (( window.innerHeight * 3) / 4 );
-        anime.forEach( function (e) {
-            if (( windowTop) > e.offsetTop ) {
-                e.classList.add('animate');
-            } else {
-                e.classList.remove('animate');
-            };
-        });
-    }));
-};
-
-
 const to_top = document.querySelector('.smooth-to-top');
 
 window.addEventListener('scroll', () => {
@@ -27,8 +11,37 @@ to_top.addEventListener('click', () => {
         top: 0,
         behavior: 'smooth'
     });
-})
+});
 
+ScrollReveal().reveal('video', { 
+    delay: 300 
+});
 
-ScrollReveal().reveal('video', { delay: 300 });
-ScrollReveal().reveal('.paragraph', { delay: 80 })
+ScrollReveal().reveal('.paragraph', { 
+    delay: 80, 
+    reset: true 
+});
+
+ScrollReveal().reveal('.animation', { 
+    reset: true, 
+    distance: '70%', 
+    origin: 'left', 
+    duration: 1800, 
+    easing: 'ease',
+    delay: 80,
+});
+
+ScrollReveal().reveal('.animation-left', {
+    reset: true,
+    distance: '150px',
+    origin: 'bottom',
+    duration: 800
+});
+
+ScrollReveal().reveal('.animation-right', {
+    reset: true,
+    distance: '150px',
+    origin: 'top',
+    duration: 800,
+});
+
