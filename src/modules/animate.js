@@ -19,7 +19,9 @@ ScrollReveal().reveal('video', {
 
 ScrollReveal().reveal('.paragraph', { 
     delay: 80, 
-    reset: true 
+    reset: true,
+    origin: 'bottom',
+    distance: '50px',
 });
 
 ScrollReveal().reveal('.animation', { 
@@ -34,14 +36,14 @@ ScrollReveal().reveal('.animation', {
 ScrollReveal().reveal('.animation-left', {
     reset: true,
     distance: '150px',
-    origin: 'bottom',
+    origin: 'top',
     duration: 800
 });
 
 ScrollReveal().reveal('.animation-right', {
     reset: true,
     distance: '150px',
-    origin: 'top',
+    origin: 'bottom',
     duration: 800,
 });
 
