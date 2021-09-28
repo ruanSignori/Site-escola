@@ -64,3 +64,9 @@ ScrollReveal().reveal('.span-animated-school', {
     easing: 'cubic-bezier(0.73, 0.12, 0.35, 0.96)',
     delay: 30
 });
+
+ScrollReveal().reveal('.accept-cookies', {
+    delay: 2000,
+    distance: '150px',
+    origin: 'bottom'
+});
