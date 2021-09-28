@@ -28,9 +28,9 @@ ScrollReveal().reveal('.animation', {
     reset: true, 
     distance: '70%', 
     origin: 'left', 
-    duration: 1800, 
-    easing: 'ease',
-    delay: 80,
+    duration: 1500, 
+    easing: 'ease-in-out',
+    delay: 80
 });
 
 ScrollReveal().reveal('.animation-left', {
@@ -47,3 +47,20 @@ ScrollReveal().reveal('.animation-right', {
     duration: 800,
 });
 
+ScrollReveal().reveal('.span-animated', {
+    reset: true,
+    distance: '150px',
+    origin: 'bottom',
+    duration: 1000,
+    easing: 'cubic-bezier(0.73, 0.12, 0.35, 0.96)',
+    delay: 30
+});
+
+ScrollReveal().reveal('.span-animated-school', {
+    reset: true,
+    distance: '150px',
+    origin: 'bottom',
+    duration: 1400,
+    easing: 'cubic-bezier(0.73, 0.12, 0.35, 0.96)',
+    delay: 30
+});
