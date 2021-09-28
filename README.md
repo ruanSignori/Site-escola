@@ -16,4 +16,15 @@ Até lá, apenas upei ele no Netlify para testes de funcionamento de Cookies, e 
 Estou estudando meios de deixar o site mais rápido, mas não posso fazer isso enquanto não tenho o conteúdo oficial do jogo.<br>
 Atualmente segundo o <a href="https://developers.google.com/speed/pagespeed/insights/?hl=pt-br">Page Speed Insights</a> do Google, o site está com uma média de velocidade em Mobile de 74, e para Desktop uma média de 96.
 
+# Ferramentas utilizadas 🔧
+Figma<br>
+Google Analytics:
+
+## Frameworks
+WebPack <br>
+<a href="https://scrollrevealjs.org/guide/hello-world.html">ScrollReveal</a> : Para animaçoes de Scroll do site <br>
+<a href="https://github.com/js-cookie/js-cookie">Cookie Js</a> : Para declarar o uso de cookies do site <br>
+
+
+
 Criticas e elogios são bem-vindos. Afinal é meu primeiro site que vai ser hospedado.
