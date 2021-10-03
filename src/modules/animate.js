@@ -1,4 +1,5 @@
 
+
 const to_top = document.querySelector('.smooth-to-top');
 
 window.addEventListener('scroll', () => {
@@ -69,4 +70,13 @@ ScrollReveal().reveal('.accept-cookies', {
     delay: 2000,
     distance: '150px',
     origin: 'bottom'
+});
+
+ScrollReveal().reveal('.smooth-animation', {
+    reset: true,
+    distance: '170px',
+    origin: 'bottom',
+    duration: 1500,
+    easing: 'cubic-bezier(0.73, 0.12, 0.35, 0.96)',
+    delay: 30
 });
