@@ -18,7 +18,8 @@ Atualmente segundo o <a href="https://developers.google.com/speed/pagespeed/insi
 
 # Ferramentas utilizadas 🔧
 Figma<br>
-Google Analytics:
+Google Analytics: Para o monitoramento de acessos e downloads que vão ter no site.<br>
+<a href="https://github.com/NickPiscitelli/Glider.js">Glider.js</a>: Usado para fazer o "carrousel" de imagens no site.<br>
 
 ## Frameworks
 WebPack <br>
