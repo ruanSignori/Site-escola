@@ -1,4 +1,4 @@
-
+import ScrollReveal from 'scrollreveal';
 
 const to_top = document.querySelector('.smooth-to-top');
 
@@ -13,6 +13,7 @@ to_top.addEventListener('click', () => {
         behavior: 'smooth'
     });
 });
+
 
 ScrollReveal().reveal('video', { 
     delay: 300 
@@ -32,20 +33,6 @@ ScrollReveal().reveal('.animation', {
     duration: 1500, 
     easing: 'ease-in-out',
     delay: 80
-});
-
-ScrollReveal().reveal('.animation-left', {
-    reset: true,
-    distance: '150px',
-    origin: 'top',
-    duration: 800
-});
-
-ScrollReveal().reveal('.animation-right', {
-    reset: true,
-    distance: '150px',
-    origin: 'bottom',
-    duration: 800,
 });
 
 ScrollReveal().reveal('.span-animated', {

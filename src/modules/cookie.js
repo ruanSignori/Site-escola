@@ -1,4 +1,4 @@
-import Cookies from 'js-cookie'
+import Cookies from 'js-cookie';
 
 const myCookie = Cookies.get('gamePadreFernando');
 const acceptCookies = document.querySelector('.true');
