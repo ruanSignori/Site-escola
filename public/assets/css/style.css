@@ -55,10 +55,18 @@ header .span-animated-school {
 }
 
 nav {
-    min-height: 30px;
+    height: 15%;
     background-color: #f5f5f5;
     padding: 14px;
     box-shadow: 0px 0px 3px #00000028;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    
+}
+
+nav img {
+    width: 40px;
 }
 
 nav a {
@@ -202,6 +210,7 @@ img {
 .content-child-3 p {
     color: #ffffff;
     max-width: 400px;
+    font-size: 1.3em;
 }
 
 .content-child-4 {
@@ -224,6 +233,25 @@ img {
     box-shadow: 1px 2px 9px 2px #00000047;
 }
 
+.bakcground-context {
+    background-color: #f1f1f1;
+    display: flex;
+
+}
+
+.context-carousel {
+    max-width: 60%;
+    background-color: #010713f1;
+    padding: 10px 10px 0 10px;
+    border-radius: 0 15px 0 0;
+}
+
+.context-carousel p {
+    color: #ffffff;
+    text-align: start;
+}
+
+
 .galery-of-img {
     margin: auto;
     max-width: 100%;
@@ -233,8 +261,9 @@ img {
     justify-content: center;
     padding: 100px;
     background-color: #010713f1;
-    gap: 300px;
+    gap: 100px;
 }
+
 
 .item-1x1 {
     max-width: 500px;
@@ -253,6 +282,7 @@ img {
 .carousel-item img {
     position: relative !important;
     width: 100% !important;
+    border-radius: 10px !important;
 }
 
 .carousel button {
@@ -435,6 +465,10 @@ footer p {
     .centralized-paragraph {
         max-width: 100%;
     }
+
+    .context-carousel {
+        max-width: 80%;
+    }
 }
 
 @media (max-width: 834px) {
@@ -477,6 +511,7 @@ footer p {
 }
 
 @media (max-width: 550px){
+
     .animation-txt-cont {
         width: 150%;
         margin-left: 0px;
