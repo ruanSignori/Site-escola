@@ -91,6 +91,9 @@ class Carousel {
       this.nextButton.addEventListener('click', () => {
         const correctSlideIndex = this.currentSlideIndex === this.lastSlideIndex ? this.currentSlideIndex = 0 : ++this.currentSlideIndex;
         this.switchingClassOfSlides(correctSlideIndex);
+
+        const addAnimation = document.querySelector(`.${this.classAdd_Remove}`);
+        addAnimation.style.animation = 'fadeVisibilityRight 0.5s';
       });
     }
   
@@ -98,6 +101,10 @@ class Carousel {
       this.previousButton.addEventListener('click', () => {
         const correctSlideIndex = this.currentSlideIndex === 0 ? this.currentSlideIndex = this.lastSlideIndex : --this.currentSlideIndex;
         this.switchingClassOfSlides(correctSlideIndex);
+        
+
+        const addAnimation = document.querySelector(`.${this.classAdd_Remove}`);
+        addAnimation.style.animation = 'fadeVisibilityLeft 0.5s';
       });
     }
   

@@ -285,7 +285,8 @@ img {
 */
 .carousel .carousel__item--visible, .carousel .carousel__item--visible2 {
     display: block;
-    animation: fadeVisibility 0.5s;
+
+    /*Animação */
 }
 
 .carousel .carousel__actions {
@@ -586,12 +587,27 @@ footer p {
 }
 
 
-@keyframes fadeVisibility {
+@keyframes fadeVisibilityRight {
     0% {
       opacity: 0;
+      transform: translateX(30%);
     }
     100% {
       opacity: 1;
       transform: opacity linear;
+      transform: translateX(0%);
+    }
+}
+
+
+@keyframes fadeVisibilityLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-30%);
+    }
+    100% {
+      opacity: 1;
+      transform: opacity linear;
+      transform: translateX(0%);
     }
 }
