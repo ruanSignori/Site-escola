@@ -19,10 +19,9 @@ Atualmente segundo o <a href="https://developers.google.com/speed/pagespeed/insi
 # Ferramentas utilizadas 🔧
 Figma<br>
 Google Analytics: Para o monitoramento de acessos e downloads que vão ter no site.<br>
-<a href="https://github.com/NickPiscitelli/Glider.js">Glider.js</a>: Usado para fazer o "carrousel" de imagens no site.<br>
 
 ## Frameworks
-WebPack <br>
+WebPack/Bundle.js<br>
 <a href="https://scrollrevealjs.org/guide/hello-world.html">ScrollReveal</a> : Para animaçoes de Scroll do site <br>
 <a href="https://github.com/js-cookie/js-cookie">Cookie Js</a> : Para declarar o uso de cookies do site <br>
 
