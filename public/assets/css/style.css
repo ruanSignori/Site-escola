@@ -27,14 +27,14 @@ body {
 }
 
 header {
-    min-height: 280px !important;
+    min-height: 280px;
     background: url(../../../src/assets/img/teste02.webp) no-repeat center center;
 }
 
 header .content-header {
-    max-width: 900px !important;
-    height: 350px !important;
-    padding: 10px 0px 10px 45px !important;
+    max-width: 900px;
+    height: 350px;
+    padding: 2% 0 2% 3%;
 }
 
 header .span-animated {
@@ -57,12 +57,11 @@ header .span-animated-school {
 nav {
     height: 15%;
     background-color: #f5f5f5;
-    padding: 14px;
+    padding: 5px;
     box-shadow: 0px 0px 3px #00000028;
-    display: flex !important;
-    justify-content: space-between !important;
-    align-items: center !important;
-    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 nav img {
@@ -105,12 +104,12 @@ p {
 } 
 
 .content-1 h1 {
-    font-size: 2.2em !important; 
-    font-family: var(--fontTitulo) !important;
-    color: var(--cor4) !important;
-    width: 650px !important;
-    margin: auto !important;
-    font-weight: 600 !important;
+    font-size: 2.2em; 
+    font-family: var(--fontTitulo);
+    color: var(--cor4);
+    width: 650px;
+    margin: auto;
+    font-weight: 600;
 }
 
 img {
@@ -119,13 +118,13 @@ img {
 }
 
 .container {
-    display: flex !important;
-    flex-wrap: wrap !important;
-    max-width: 950px !important;
-    margin: auto !important;
-    align-items: center !important;
-    justify-content: center !important;
-    gap: 5px !important;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 950px;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
 }
 
 .container > div {
@@ -179,7 +178,7 @@ img {
     max-width: 100%;
     margin: auto;
     margin-top: -15px;
-    background-color: rgb(241, 241, 241);
+    background-color: #f1f1f1;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -317,6 +316,10 @@ img {
     margin-right: 3%;
 }
 
+.carousel__actions button:hover {
+    background-color: #0078d4de
+}
+
 footer {
     background-color: #d3d2d2;
     height: 150px;
@@ -340,7 +343,7 @@ footer p {
     position: fixed;
     bottom: 0;
     box-shadow: -1px -2px 15px #00000070;
-    display: flex !important;
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -488,19 +491,19 @@ footer p {
 
 @media (max-width: 834px) {
     .item {
-        max-width: 80% !important;
+        max-width: 80%;
     }
 }
 
 @media (max-width: 644px) {
     .content-1 h1 {
-        margin: auto !important; 
-        text-align: center !important;
-        width: max-content !important;
+        margin: auto; 
+        text-align: center;
+        width: max-content;
     }
 
     .item {
-        max-width: 100% !important;
+        max-width: 100%;
     }
 }
 
@@ -513,11 +516,11 @@ footer p {
 
 @media (max-width: 620px){
     header .span-animated {
-        font-size: 3.5em !important;
+        font-size: 3.5em;
     }
 
     header .content-header {
-        padding: 10px !important;
+        padding: 10px;
     }
 
     .txt-cont {
@@ -539,7 +542,7 @@ footer p {
 
 @media (max-width: 415px){
     header .span-animated {
-        font-size: 2.5em !important;
+        font-size: 2.5em;
     }
 
     .img-history {
@@ -547,7 +550,7 @@ footer p {
     }
 
     header .span-animated-school {
-        font-size: 1.5em !important;
+        font-size: 1.5em;
     }
 
     aside {
@@ -590,7 +593,7 @@ footer p {
 @keyframes fadeVisibilityRight {
     0% {
       opacity: 0;
-      transform: translateX(30%);
+      transform: translateX(40%);
     }
     100% {
       opacity: 1;
@@ -603,7 +606,7 @@ footer p {
 @keyframes fadeVisibilityLeft {
     0% {
       opacity: 0;
-      transform: translateX(-30%);
+      transform: translateX(-40%);
     }
     100% {
       opacity: 1;
