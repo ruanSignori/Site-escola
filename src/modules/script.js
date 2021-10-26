@@ -25,15 +25,6 @@ ScrollReveal().reveal('.paragraph', {
     distance: '50px',
 });
 
-ScrollReveal().reveal('.animation', { 
-    reset: true, 
-    distance: '70%', 
-    origin: 'left', 
-    duration: 1500, 
-    easing: 'ease-in-out',
-    delay: 80
-});
-
 ScrollReveal().reveal('.span-animated', {
     reset: true,
     distance: '150px',
