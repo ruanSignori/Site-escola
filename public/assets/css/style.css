@@ -190,24 +190,25 @@ img {
 }
 
 .content-child-3 {
-    width: 700px;
-    height: 500px;
-    background-color: var(--cor4);
+    max-width: 500px;
+    height: 400px;
     display: grid;
+    margin-left: 100px;
+    border: 10px solid transparent;
+    box-shadow: 14px 0px 0px var(--cor4) inset;
     place-items: center;
     padding: 20px;
-    order: 2;       
 }
 
 
 .content-child-3 p {
-    color: #ffffff;
+    max-width: 350px;
+    color: var(--cor4);
     font-size: 1.3em;
 }
 
 .content-child-4 {
     width: 850px;
-    margin-right: -42px;
 }
 
 .video {
