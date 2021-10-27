@@ -318,6 +318,19 @@ img {
     background-color: #0078d4de
 }
 
+.length-carousel-image {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #373b44cc;
+    position: absolute;
+    bottom: 20px;
+}
+
+.length-carousel-image:hover {
+    background-color: #4088cc;
+}
+
 footer {
     background-color: #d3d2d2;
     height: 150px;
@@ -394,7 +407,7 @@ footer p {
 
 .content-2 {
     margin: auto;
-    background-color: rgba(12, 30, 88, 0.945);
+    background-color: #051422f5;
     padding: 80px 70px 100px 100px;
     width: 100%;
     display: flex;

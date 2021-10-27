@@ -75,6 +75,7 @@ class Carousel {
     events() {
       this.nextButtonEvent();
       this.previousButtonEvent();
+      //this.lengthCarousel();
     }
   
   
@@ -103,6 +104,12 @@ class Carousel {
       this.slides.forEach(e => e.classList.remove(this.classAdd_Remove));
       this.slides[correctSlideIndex].classList.add(this.classAdd_Remove);
     }
+
+    /*lengthCarousel() {
+      const classLengthSlides = document.querySelector('.length-carousel-image');
+
+      this.slides.forEach(this.slides.length * classLengthSlides)
+    } */
   
 }
 //Se criar um novo carousel apenas adicionar um numero a mais, no html, js e css.
