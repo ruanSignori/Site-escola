@@ -186,16 +186,16 @@ img {
 }
 
 .development-game > div {
-    flex: 1 1 620px;
-}
+    flex: 1 1 700px;
+} 
 
 .content-child-3 {
     max-width: 500px;
     height: 400px;
-    display: grid;
     margin-left: 100px;
-    border: 10px solid transparent;
-    box-shadow: 14px 0px 0px var(--cor4) inset;
+    box-shadow: 2px 2px 2px solid black;
+    border-left: 10px solid var(--cor4);
+    display: grid;
     place-items: center;
     padding: 20px;
 }
@@ -209,6 +209,7 @@ img {
 
 .content-child-4 {
     width: 850px;
+    margin-left: 1em;
 }
 
 .video {
@@ -223,7 +224,7 @@ img {
     left: 5%;
     width: 90%;
     height: 90%;
-    box-shadow: 1px 2px 9px 2px #00000047;
+    box-shadow: 5px 5px 11px 2px #00000029
 }
 
 .bakcground-context {
@@ -454,15 +455,6 @@ footer p {
 /*As medias queries estão ordenada por max-width decrescente. */
 
 @media (max-width: 1507px){
-
-    .development-game {
-        gap: 10px;
-    }
-    
-    .content-child-3 {
-        margin: auto;
-        width: 97%;
-    }
 }
 
 @media (max-width: 1368px){
