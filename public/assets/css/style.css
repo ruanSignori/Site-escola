@@ -193,8 +193,9 @@ img {
     max-width: 500px;
     height: 400px;
     margin-left: 100px;
-    box-shadow: 2px 2px 2px solid black;
+    margin-right: -25px;
     border-left: 10px solid var(--cor4);
+    border-radius: 3% 0px 0px 3%;
     display: grid;
     place-items: center;
     padding: 20px;
@@ -209,7 +210,7 @@ img {
 
 .content-child-4 {
     width: 850px;
-    margin-left: 1em;
+    margin-left: -3em;
 }
 
 .video {
@@ -224,7 +225,7 @@ img {
     left: 5%;
     width: 90%;
     height: 90%;
-    box-shadow: 5px 5px 11px 2px #00000029
+    box-shadow: 13px 4px 17px #00000029;
 }
 
 .bakcground-context {
