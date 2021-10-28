@@ -173,6 +173,56 @@ img {
     padding: 20px 20px;
 }
 
+.content-1 {
+    padding: 80px 0px;
+}
+
+.content-2 {
+    margin: auto;
+    background-color: #051422f5;
+    padding: 80px 70px 100px 100px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 200px;
+}
+
+.centralized-paragraph {
+    margin-left: -40px;
+    margin-top: 50px;
+}
+
+.content-child-1 {
+    max-width: 100%;
+}
+
+.content-child-2 {
+    max-width: 100%;
+}
+
+.img-history img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 2px;
+}
+
+.content-2 > div {
+    flex: 1 1 500px;
+}
+
+.content-2 p {
+    color: #ffffff;
+}
+
+.txt-cont {
+    color: white;
+    font-size: 2.5em;
+    font-family: var(--fontTitulo);
+}
+
+
 .development-game {
     max-width: 100%;
     margin: auto;
@@ -186,7 +236,7 @@ img {
 }
 
 .development-game > div {
-    flex: 1 1 700px;
+    flex: 1 1 765px;
 } 
 
 .content-child-3 {
@@ -200,7 +250,6 @@ img {
     place-items: center;
     padding: 20px;
 }
-
 
 .content-child-3 p {
     max-width: 350px;
@@ -380,11 +429,15 @@ footer p {
     min-height: 35px;
     margin-left: 20px;
     border: none;
+    border-radius: 5px;
     font-size: 1em;
+    color: var(--cor4);
+    font-weight: bold;
 }
 
-.button-cookies:hover {
-    background-color: #c0c0c0;
+.button-cookies:focus {
+    background-color: var(--cor4);
+    color: #ffffff;
 }
 
 .smooth-to-top {
@@ -402,55 +455,6 @@ footer p {
 
 .smooth-to-top:hover {
     background-color: var(--cor4)
-}
-
-.content-1 {
-    padding: 80px 0px;
-}
-
-.content-2 {
-    margin: auto;
-    background-color: #051422f5;
-    padding: 80px 70px 100px 100px;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    gap: 200px;
-}
-
-.centralized-paragraph {
-    margin-left: -40px;
-    margin-top: 50px;
-}
-
-.content-child-1 {
-    max-width: 100%;
-}
-
-.content-child-2 {
-    max-width: 100%;
-}
-
-.img-history img {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    border-radius: 2px;
-}
-
-.content-2 > div {
-    flex: 1 1 500px;
-}
-
-.content-2 p {
-    color: #ffffff;
-}
-
-.txt-cont {
-    color: white;
-    font-size: 2.5em;
-    font-family: var(--fontTitulo);
 }
 
 /*As medias queries estão ordenada por max-width decrescente. */
