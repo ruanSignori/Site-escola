@@ -22,7 +22,6 @@
 
 
 body {
-    height: 100vh;
     background-color: #e0e0e0;
 }
 
@@ -153,24 +152,19 @@ img {
 }
 
 .item button {
+    width: 100%;
     min-height: 60px;
     background-color: #1d1e20;
     margin-top: 10px;
     box-shadow: 2px 2px 6px #00000038;
     border: none;
     border-radius: 5px;
+    font-size: 1.4em;
+    color: #ffffff;
 }
 
 .item button:hover {
-    background-color: #212427;
-}
-
-.item button a {
-    text-decoration: none;
-    font-size: 1.5em;
-    width: 250px;
-    color: #ffffff;
-    padding: 20px 20px;
+    background-color: #333538;
 }
 
 .content-1 {
@@ -441,7 +435,7 @@ footer p {
 }
 
 .smooth-to-top {
-    background-color: #2b55b1;
+    background-color: #0a3457;
     width: 50px;
     height: 50px;
     position: fixed;
@@ -451,18 +445,19 @@ footer p {
     display: grid;
     place-items: center;
     opacity: 0;
+    box-shadow: 0px 5px 7px 3px #0000003d;
 }
 
 .smooth-to-top:hover {
-    background-color: var(--cor4)
+    background-color: #094d85;
 }
 
 /*As medias queries estão ordenada por max-width decrescente. */
 
-@media (max-width: 1507px){
+@media (max-width: 1507px) {
 }
 
-@media (max-width: 1368px){
+@media (max-width: 1368px) {
    .content-2 {
        padding: 70px 15px;
        gap: 50px;
@@ -472,6 +467,24 @@ footer p {
        margin-left: 0px;
    }
 
+}
+
+@media (max-width: 1291px) {
+    .content-child-3 {
+        margin-left: auto;
+        margin-right: 0;
+        max-width: 85%;
+        justify-content: start;
+        padding-left: 10%;
+    }
+
+    .content-child-4 {
+        margin: auto;
+    }
+
+    .video > iframe {
+        box-shadow: 0px 6px 16px #00000024;
+    }
 }
 
 @media (max-width: 1219px) {
@@ -510,13 +523,13 @@ footer p {
 }
 
 
-@media (max-width: 625px){
+@media (max-width: 625px) {
     .button-cookies {
         margin-top: 10px;
     }
 }
 
-@media (max-width: 620px){
+@media (max-width: 620px) {
     header .span-animated {
         font-size: 3.5em;
     }
@@ -530,13 +543,13 @@ footer p {
     }
 }
 
-@media (max-width: 550px){
+@media (max-width: 550px) {
     .development-game {
         padding: 50px 0;
     }
 }
 
-@media (max-width: 415px){
+@media (max-width: 415px) {
     header .span-animated {
         font-size: 2.5em;
     }
@@ -558,7 +571,7 @@ footer p {
     }
 }
 
-@media (max-width: 375px){
+@media (max-width: 375px) {
 
     main {
         padding: 10px 0px;
@@ -574,7 +587,7 @@ footer p {
     }
 }
 
-@media (max-width: 340px){
+@media (max-width: 340px) {
     .carousel .carousel__item img {
         max-width: 350px;
         height: 300px;
