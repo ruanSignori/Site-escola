@@ -476,8 +476,9 @@ footer p {
         max-width: 85%;
         justify-content: start;
         padding-left: 10%;
+        font-size: 0.9em;
+        max-height: 1200px;
     }
-
     .content-child-4 {
         margin: auto;
     }
@@ -543,12 +544,6 @@ footer p {
     }
 }
 
-@media (max-width: 550px) {
-    .development-game {
-        padding: 50px 0;
-    }
-}
-
 @media (max-width: 415px) {
     header .span-animated {
         font-size: 2.5em;
@@ -568,6 +563,11 @@ footer p {
 
     .content-2 {
         gap: 120px;
+    }
+
+    .content-child-3 {
+        max-width: 95%;
+        padding: 10px 30px;
     }
 }
 
