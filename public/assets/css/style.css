@@ -26,8 +26,13 @@ body {
 }
 
 header {
-    min-height: 280px;
-    background: url(../../../src/assets/img/teste02.webp) no-repeat center center;
+    height: 400px;
+    width: 100%;
+    background: url(../../../src/assets/img/fundoSite.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: local;
 }
 
 header .content-header {
