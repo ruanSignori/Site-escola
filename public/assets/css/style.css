@@ -136,6 +136,7 @@ img {
 }
 
 .item {
+    width: 455px;
     display: grid;
 }
 
@@ -308,6 +309,10 @@ img {
     padding: 100px 20px;
     background-color: #010713f1;
     gap: 100px;
+}
+
+.carousel__item {
+    max-width: 450px;
 }
 
 .carousel {
