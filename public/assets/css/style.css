@@ -28,11 +28,11 @@ body {
 header {
     height: 400px;
     width: 100%;
-    background: url(../../../src/assets/img/fundoSite.jpg);
+    background: url(../../../src/assets/img/PicsArt_11-02-08.27.18.webp); /*1500x450px */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-attachment: local;
+    background-attachment: local; 
 }
 
 header .content-header {
