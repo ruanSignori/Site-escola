@@ -1,5 +1,7 @@
 import ScrollReveal from 'scrollreveal';
 
+
+//Botão de subir para o topo da página
 const to_top = document.querySelector('.smooth-to-top');
 
 window.addEventListener('scroll', () => {
@@ -14,10 +16,8 @@ to_top.addEventListener('click', () => {
     });
 });
 
-ScrollReveal().reveal('video', { 
-    delay: 300 
-});
 
+//Todos as animações de scroll do site
 ScrollReveal().reveal('.paragraph', { 
     delay: 80, 
     reset: true,
@@ -57,7 +57,16 @@ ScrollReveal().reveal('.smooth-animation', {
     delay: 30
 });
 
+//Mundaça de imagem automática na parte da histório do jogo
 
+setInterval( () => {
+  const img = document.querySelector('.alternate-img-history');
+  img.src = './src/assets/img/history/imagem-2.webp';
+  img.classList.add('animation-history')
+}, 3000)
+
+
+//Script para o funcionamento do carousel
 class Carousel {
     constructor(dataOfslides, classNextButton, classPreviousButton, classAddedAndRemoved) {
       this.slides = document.querySelectorAll(dataOfslides);

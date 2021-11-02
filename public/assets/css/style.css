@@ -28,7 +28,7 @@ body {
 header {
     height: 400px;
     width: 100%;
-    background: url(../../../src/assets/img/PicsArt_11-02-08.27.18.webp); /*1500x450px */
+    background: url(../../../src/assets/img/fundo-Site.webp); /*1500x450px */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -207,6 +207,10 @@ img {
     border-radius: 2px;
 }
 
+.animation-history {
+    animation: alternateOpacity 1s;
+}
+
 .content-2 > div {
     flex: 1 1 500px;
 }
@@ -378,10 +382,6 @@ img {
     bottom: 20px;
 }
 
-.length-carousel-image:hover {
-    background-color: #4088cc;
-}
-
 footer {
     background-color: #d3d2d2;
     height: 150px;
@@ -516,13 +516,15 @@ footer p {
     }
 }
 
-@media (max-width: 644px) {
+@media (max-width: 745px) {
     .content-1 h1 {
         margin: auto; 
         text-align: center;
         width: max-content;
     }
+}
 
+@media (max-width: 644px) {
     .item {
         max-width: 100%;
     }
@@ -622,5 +624,17 @@ footer p {
       opacity: 1;
       transform: opacity linear;
       transform: translateX(0%);
+    }
+}
+
+@keyframes alternateOpacity {
+    0% {
+        opacity: 0;
+        scale: 0;
+    }
+
+    100% {
+        transform: opacity linear;
+        scale: 1;
     }
 }
