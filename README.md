@@ -3,7 +3,7 @@
 O site está sendo desenvolvido para Download do jogo feito na escola, por enquanto isto é apenas o "Protótipo" do site.
 Pois não foi adicionado nenhum conteúdo oficial do jogo.
 
-Se quiser olhar de perto como está ficando o projeto <a href="https://game-padre-fernando.netlify.app">Clique aqui!</a>
+Se quiser olhar de perto como está ficando o projeto <a href="http://gamepadrefernando.com.br">Clique aqui!</a>
 
 # Sobre o Jogo 🎮
 A parte de programação do jogo está sendo feito pelo nosso Professor. <br>
