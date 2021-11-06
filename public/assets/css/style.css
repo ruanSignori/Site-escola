@@ -379,12 +379,13 @@ img {
 }
 
 .length-carousel-image {
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
-    background-color: #373b44cc;
+    background-color: #1c3c85cc;
     position: absolute;
-    bottom: 20px;
+    bottom: 10px;
+    right: 10px;
 }
 
 footer {

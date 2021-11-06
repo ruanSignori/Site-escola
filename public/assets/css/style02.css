@@ -1,11 +1,21 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
+
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; 
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
 }
 
-body {
-    height: 150vh;
-    background: url(../Imagens/teste02.jpg) no-repeat center center
+:root {
+    --cor1: #75B4E1;
+    --cor2: #3094DB;
+    --cor3: #2572A8;
+    --cor4: #0078D4;
+    --cor5: #000000;
+    --font:'Roboto', sans-serif;
+    --fontTitulo: 'Heebo', sans-serif;
+    /*#122e44 cor */
 }

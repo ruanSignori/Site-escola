@@ -16,7 +16,6 @@ to_top.addEventListener('click', () => {
     });
 });
 
-
 //Todos as animações de scroll do site
 ScrollReveal().reveal('.paragraph', { 
     delay: 80, 
@@ -58,13 +57,11 @@ ScrollReveal().reveal('.smooth-animation', {
 });
 
 //Mundaça de imagem automática na parte da histório do jogo
-
-setInterval( () => {
+setInterval(() => {
   const img = document.querySelector('.alternate-img-history');
   img.src = './src/assets/img/history/imagem-2.webp';
   img.classList.add('animation-history')
 }, 3000)
-
 
 //Script para o funcionamento do carousel
 class Carousel {
@@ -76,6 +73,8 @@ class Carousel {
   
       this.nextButton = document.querySelector(classNextButton);
       this.previousButton = document.querySelector(classPreviousButton);
+
+      this.classLengthSlide = document.querySelector('.length-carousel-image');
   
       this.events();
     }
@@ -90,6 +89,7 @@ class Carousel {
     nextButtonEvent() {
       this.nextButton.addEventListener('click', () => {
         const correctSlideIndex = this.currentSlideIndex === this.lastSlideIndex ? this.currentSlideIndex = 0 : ++this.currentSlideIndex;
+        
         this.switchingClassOfSlides(correctSlideIndex);
 
         const addAnimation = document.querySelector(`.${this.classAdd_Remove}`);
@@ -112,13 +112,6 @@ class Carousel {
       this.slides.forEach(e => e.classList.remove(this.classAdd_Remove));
       this.slides[correctSlideIndex].classList.add(this.classAdd_Remove);
     }
-
-    /*lengthCarousel() {
-      const classLengthSlides = document.querySelector('.length-carousel-image');
-
-      this.slides.forEach(this.slides.length * classLengthSlides)
-    } */
-  
 }
 
 //Se criar um novo carousel apenas adicionar um numero a mais, no html, js e css.
