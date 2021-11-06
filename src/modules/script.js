@@ -116,4 +116,44 @@ class Carousel {
 
 //Se criar um novo carousel apenas adicionar um numero a mais, no html, js e css.
 const slide_1 = new Carousel('[data-js="carousel__item"]', '[data-js="carousel__button--next"]', '[data-js="carousel__button--prev"]', 'carousel__item--visible');
+slide_1.events();
 
+//Funções da navbar
+class MobileNavbar {
+  constructor(mobileMenu, navList, navLinks) {
+    this.mobileMenu = document.querySelector(mobileMenu);
+    this.navList = document.querySelector(navList);
+    this.navLinks= document.querySelectorAll(navLinks);
+
+    this.activeClass = 'active';
+
+    this.handleClick = this.handleClick.bind(this);
+
+    this.events();
+  }
+
+  events() {
+    if (this.mobileMenu) this.clickEvent();
+    return this;
+  }
+
+  clickEvent() {
+    this.mobileMenu.addEventListener('click', this.handleClick);
+  }
+
+  handleClick() {
+    this.navList.classList.toggle(this.activeClass);
+    this.animateLinks();
+  }
+
+  animateLinks() {
+    this.navLinks.forEach((link , index) => {
+      console.log(index)
+      link.style.animation ? link.style.animation = '' : link.style.animation = `navLinkFade 0.5s ease forwards 0.3s ${index / 7 + 0.3}s`;
+      
+    });
+  }
+}
+
+const mobileNavbar = new MobileNavbar('.mobile-menu', '.nav-list', 'nav-list li');
+mobileNavbar.events();
