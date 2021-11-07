@@ -70,11 +70,6 @@ header .span-animated-school {
     font-family: var(--font) !important;
 }
 
-.facebook-dropdown {
-    background-color: #2d88ff !important;
-
-}
-
 main {
     margin: auto;
     max-width: 100%;
