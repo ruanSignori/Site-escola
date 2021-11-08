@@ -22,7 +22,8 @@ ScrollReveal().reveal('.paragraph', {
   reset: true,
   origin: 'bottom',
   distance: '50px',
-  interval: 100
+  interval: 100,
+  scale: 0.90
 });
 
 ScrollReveal().reveal('.span-animated', {
@@ -96,8 +97,13 @@ class Carousel {
     nextButtonEvent() {
       this.nextButton.addEventListener('click', () => {
         const correctSlideIndex = this.currentSlideIndex === this.lastSlideIndex ? this.currentSlideIndex = 0 : ++this.currentSlideIndex;
+           
+        if (this.lastSlideIndex === 0) {
+          this.classLengthSlide.innerHTML = `${this.currentSlideIndex + 1}/${this.slides.length} `
+        } else {
+          this.classLengthSlide.innerHTML = `${this.currentSlideIndex + 1}/${this.slides.length} `
+        }
 
-        this.classLengthSlide.innerHTML = `${this.currentSlideIndex}/${this.slides.length} `
         this.switchingClassOfSlides(correctSlideIndex);
 
         const addAnimation = document.querySelector(`.${this.classAdd_Remove}`);
@@ -108,13 +114,6 @@ class Carousel {
     previousButtonEvent() {
       this.previousButton.addEventListener('click', () => {
         const correctSlideIndex = this.currentSlideIndex === 0 ? this.currentSlideIndex = this.lastSlideIndex : --this.currentSlideIndex;
-
-        
-        if (this.lastSlideIndex === 0) {
-          this.classLengthSlide.innerHTML = `${this.currentSlideIndex + 1}/${this.slides.length} `
-        } else {
-          this.classLengthSlide.innerHTML = `${this.currentSlideIndex + 1}/${this.slides.length} `
-        }
 
         this.switchingClassOfSlides(correctSlideIndex);
 
