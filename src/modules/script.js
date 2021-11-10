@@ -51,6 +51,7 @@ ScrollReveal().reveal('.accept-cookies', {
 });
 
 ScrollReveal().reveal('.smooth-animation', {
+  reset: true,
   distance: '170px',
   origin: 'bottom',
   duration: 1500,
