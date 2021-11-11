@@ -258,33 +258,31 @@ img {
     box-shadow: 13px 4px 17px #00000029;
 }
 
-.bakcground-context {
-    background-color: #f1f1f1;
+.before-carousel {
+    width: 100%;
+    min-height: 75px;
+    background-color: #092640;
     display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 15px;
 }
 
-.context-carousel {
-    max-width: 60%;
-    background-color: #010713f1;
-    padding: 5px 10px 0 10px;
-    border-radius: 0 15px 0 0;
+.before-carousel p {
+    color: white;
+    font-size: 1.2em;
 }
-
-.context-carousel p {
-    color: #ffffff;
-    text-align: start;
-}
-
 
 .content-carousel {
     margin: auto;
+    margin-top: -16px;
     max-width: 100%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     padding: 100px 20px;
-    background-color: #010713f1;
+    background-color: #051726;
     gap: 100px;
 }
 
