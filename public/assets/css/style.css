@@ -12,7 +12,7 @@
 :root {
     --cor1: #75B4E1;
     --cor2: #3094DB;
-    --cor3: #2572A8;
+    --cor3: #2584c9;
     --cor4: #0078D4;
     --cor5: #000000;
     --font:'Roboto', sans-serif;
@@ -193,8 +193,11 @@ img {
 .img-history img {
     width: 100%;
     height: 100%;
-    position: relative;
     border-radius: 2px;
+}
+
+.carousel-item {
+    position: unset !important;
 }
 
 .content-2 > div {
