@@ -17,7 +17,6 @@
     --cor5: #000000;
     --font:'Roboto', sans-serif;
     --fontTitulo: 'Heebo', sans-serif;
-    /*#122e44 cor */
 }
 
 nav {
@@ -25,14 +24,87 @@ nav {
     top: 0;
 }
 
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+}
+
+.navbar-brand {
+    font-size: 1.5em !important; 
+    letter-spacing: 2px !important; 
+    font-family: var(--font) !important;
+}
+
 main {
     min-height: 100vh;
 }
 
-main p {
+main .title {
+    font-family: var(--fontTitulo);
+    color: var(--cor4);
+    font-size: 2.5rem;
+}
+
+.paragraph {
+    margin: 15px 10px;
+    color:  var(--cor5);
+    text-align: justify;
+    font-size: 1.3em;
+    line-height: 1.5em;
     font-family: var(--font);
 }
 
-main .title {
-    font-family: var(--fontTitulo);
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin: 25px 10px;
+    padding: 9px;
+}
+
+div .download-text {
+    max-width: 820px;
+}
+
+div .download-item {
+    max-width: 600px;
+}
+
+div .download-item:hover {
+    cursor: pointer;
+    transition: ease-in;
+    transition-duration: 1s;
+    scale: 1em;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.chamative {
+    font-size: 1.9em !important;
+    margin: 0 !important;
+}
+
+.item button {
+    width: 100%;
+    min-height: 60px;
+    background-color: #1d1e20;
+    margin-top: 10px;
+    box-shadow: 2px 2px 6px #00000038;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.4em;
+    color: #ffffff;
+    scale: 0px;
+}
+
+.container-1 {
+    max-width: 700px;
+}
+
+.container-2 {
+    max-width: 500px;
 }

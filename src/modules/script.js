@@ -119,8 +119,6 @@ class Carousel {
 
         const addAnimation = document.querySelector(`.${this.classAdd_Remove}`);
         addAnimation.style.animation = 'fadeVisibilityLeft 0.5s';
-
-        
       });
     }
   
@@ -133,5 +131,3 @@ class Carousel {
 //Se criar um novo carousel apenas adicionar um numero a mais, no html, js e css.
 const slide_1 = new Carousel('[data-js="carousel__item"]', '[data-js="carousel__button--next"]', '[data-js="carousel__button--prev"]', 'carousel__item--visible');
 slide_1.events();
-
-console.log('teste');
