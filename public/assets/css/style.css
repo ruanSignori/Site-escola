@@ -96,8 +96,8 @@ p {
     font-weight: 600;
 }
 
-strong {
-    color: var(--cor3)
+strong, b {
+    color: var(--cor4)
 }
 
 img {
