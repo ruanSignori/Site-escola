@@ -87,13 +87,17 @@ p {
     font-family: var(--font);
 } 
 
-.content-1 h1 {
+.content-1 .title {
     font-size: 2.2em; 
     font-family: var(--fontTitulo);
     color: var(--cor4);
     width: 650px;
     margin: auto;
     font-weight: 600;
+}
+
+strong {
+    color: var(--cor3)
 }
 
 img {
@@ -114,6 +118,10 @@ img {
 .text-download > div {
     flex: 1 1 380px;
     margin: 10px;
+}
+
+.text-download a {
+    color: var(--cor3);
 }
 
 .item {
@@ -261,7 +269,7 @@ img {
 .before-carousel {
     width: 100%;
     min-height: 75px;
-    background-color: #092640;
+    background-color: #2e2e2e;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -282,7 +290,7 @@ img {
     align-items: center;
     justify-content: center;
     padding: 100px 20px;
-    background-color: #051726;
+    background-color: #202020;
     gap: 100px;
 }
 
@@ -303,22 +311,22 @@ img {
 
 .carousel__item--visible
 .carousel .carousel__item img {
-    width: 100%;
     max-width: 600px;
     height: auto;
 }
 
 .carousel__item img {
     border-radius: 10px;
+    position: relative;
+    width: 100%;
 }
 
 /*
     Estilo dependendo de quantos carroséis tem
 */
+
 .carousel .carousel__item--visible, .carousel .carousel__item--visible2 {
     display: block;
-
-    /*Animação */
 }
 
 .carousel .carousel__actions {
@@ -373,17 +381,22 @@ img {
 }
 
 footer {
-    background-color: #d3d2d2;
+    background-color: #181818;
     height: 150px;
+    display: grid;
+    
 }
 
-footer p {
+footer p, footer a {
     text-decoration: none;
+    color: #fff;
+    font-size: 0.9em;
 }
 
 .content-footer {
-    display: grid;
-    place-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .accept-cookies {
@@ -518,13 +531,14 @@ footer p {
     }
 }
 
-@media (max-width: 745px) {
-    .content-1 h1 {
+@media (max-width: 804px) {
+    .content-1 .title {
         margin: auto; 
         text-align: center;
         width: max-content;
     }
 }
+
 
 @media (max-width: 644px) {
     .item {
@@ -592,11 +606,6 @@ footer p {
 
     main {
         padding: 10px 0px;
-    }
-
-    main h1 {
-        text-indent: 25px;
-        font-size: 1.8em;
     }
 
     aside {

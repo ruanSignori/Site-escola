@@ -19,3 +19,21 @@
     --fontTitulo: 'Heebo', sans-serif;
     /*#122e44 cor */
 }
+
+nav {
+    position: sticky !important;
+    top: 0;
+}
+
+main {
+    min-height: 100vh;
+    background-color: rgb(133, 164, 172);
+}
+
+main p {
+    font-family: var(--font);
+}
+
+main .title {
+    font-family: var(--fontTitulo);
+}
