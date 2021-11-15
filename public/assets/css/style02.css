@@ -157,3 +157,33 @@ footer p, footer a {
     justify-content: center;
     align-items: center;
 }
+
+.smooth-to-top {
+    background-color: #0a3457;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    opacity: 0;
+    box-shadow: 0px 5px 7px 3px #0000003d;
+}
+
+.smooth-to-top:hover {
+    background-color: #094d85;
+}
+
+@keyframes fadeVisibilityRight {
+    0% {
+      opacity: 0;
+      transform: translateX(40%);
+    }
+    100% {
+      opacity: 1;
+      transform: opacity linear;
+      transform: translateX(0%);
+    }
+}
