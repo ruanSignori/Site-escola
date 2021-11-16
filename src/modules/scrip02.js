@@ -14,12 +14,3 @@ to_top.addEventListener('click', () => {
 });
 
 
-downloadLink.addEventListener('click', () => {
-  alert('Download índisponível no momento');
-//     downloadLink.setAttribute('href', 'https://drive.google.com/file/d/11ts9eHUgoCeb0uV-zSQtCVUHQYyeLl2h/view?usp=sharing');
-});
-
-//href="https://mega.nz/file/9NFkRZYa#0P1xlGPttqZ_4-bAxAUsBgxdCRc70Dc-nUzIohnVDEY" download="true" type="zip/application"
-
-// downloadLink.removeAttribute('href');
-// downloadLink.removeAttribute('download')
