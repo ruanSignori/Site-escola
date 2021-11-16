@@ -70,3 +70,5 @@ ScrollReveal().reveal('.content-child-3', {
   delay: 50,
   duration: 700
 });
+
+console.log('teste');
