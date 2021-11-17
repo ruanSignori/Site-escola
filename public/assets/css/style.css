@@ -301,7 +301,12 @@ img {
 
 .carousel {
     overflow: hidden;
-    max-width: 375px;
+    max-width: 350px;
+}
+
+.img-history .carousel {
+    overflow: hidden;
+    max-width: 700px;
 }
 
 footer {
@@ -429,8 +434,6 @@ footer p, footer a {
     }
 }
 
-
-
 @media (max-width: 1065px) {
     .centralized-paragraph {
         max-width: 100%;
@@ -536,7 +539,6 @@ footer p, footer a {
         margin-top: -30px;
     }
 }
-
 
 @keyframes fadeVisibilityRight {
     0% {
