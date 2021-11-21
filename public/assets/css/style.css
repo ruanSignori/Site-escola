@@ -32,7 +32,7 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-attachment: local; 
+    background-attachment: local;
 }
 
 header .content-header {
@@ -75,7 +75,7 @@ main {
     max-width: 100%;
     min-height: 80%;   
     box-shadow: 0px 0px 6px #0000000a;
-    background-color: #ebebeb;
+    background-color: #eeeeee;
 }
 
 p {
@@ -104,8 +104,27 @@ img {
     width: 100%;
 }
 
+.item-introduction {
+    max-width: 700px;
+}
+
 .text-information-download {
     max-width: 500px;
+}
+
+.tab-content .active {
+    background-color: #fff;
+}
+
+/*
+.btn-tab {
+    
+}*/
+
+
+.tab-item {
+    background-color: #fff;
+    padding: 20px;
 }
 
 .text-download {

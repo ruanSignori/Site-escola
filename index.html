@@ -76,33 +76,36 @@
                 <div class="title">Sobre o jogo</div>
                 <section class="text-download">
                     <div class="item-introduction">
-                        <div class="d-flex align-items-start">
-                            <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                              <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Introdução</button>
-                              <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Desenvolvimento</button>
-                              <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Objetivos</button>
-                              <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Créditos</button>
-                            </div>
-                            <div class="tab-content text-information-download" id="v-pills-tabContent">
-                              <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
-                                <p>O jogo <strong>Mage Siel</strong> foi desenvolvido por alunos da <strong>Escola Padre Fernando</strong> e pelo professor <b>Igor dos Santos</b> (Professor de Física e Matemática da escola). E atualmente você pode jogar o nosso jogo em qualquer sistema operacional para computador(Não compátivel com celulares).</p>
-                                <p>O jogo é totalmente gratuito e você pode baixar ele no botão de Download a seguir. Esperamos que você goste do jogo e se divirta. Se você for bom, talvez até consiga terminá-lo.</p>
-                                <p>Boa sorte!</p>
-                              </div>
-                              <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
-                                  <p>O projeto “Game na escola” tem como foco principal apresentar uma experiência de desenvolvimento de games como ferramenta de aprendizagem. Realizada com um grupo de alunos do 1º e 2° ano do ensino médio, o projeto procurou desenvolver um jogo de ação do tipo “plataforma 2D”  elaborado desde a parte artística (desenhos e cenários feito pelos próprios alunos) até a parte da lógica de programação utilizada no jogo e na construção do site (de autoria do aluno do 2° ano, Ruan Signori) conteúdo este que faz parte da grade curricular do novo ensino médio. </p>
-                                </div>
-                              <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
-                                <p>“É preciso abrir os sistemas de ensino a novas ideias. Em vez da homogeneidade e da rigidez, a diferença e a mudança” (Nóvoa - 2009).</p> 
-                                <p>Assim, um grande desafio da escola é proporcionar diferentes interfaces entre as linguagens contemporâneas, de forma que os jovens possam viver e interagir nesse mundo globalizado. Instruindo-os sob os aspectos tecnológicos, éticos, humanos e culturais, para que possam exercer sua cidadania de forma plena e busquem o conhecimento com autonomia e esse foi o grande intuito do projeto.</p>
-                              </div>
-                              <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
-                                <p>Professor: Igor dos Santos( Matemática e física)
-                                1° ano : Andrey de Freitas da Fontoura, Catielen Nunes Padilha , Clamine Horst, Eduardo Lima de Vargas, Evellyn de Aguiar Laguna, Georgia Vigolo, Juan Felício dos Santos, Kalebe Augusto Benke, Karine Guterres Conrado, Kauã Lappe, Kétchuly da Silva Machado, Luiz Roberto de França Menezes, Maria Eduarda da Rosa da Silva, Matheus Luan Mella, Vitória Campos Silva, Vitória Silva de Oliveira.</p>
-                                <p>2° ano : Ana Maria Zart, Bruno Mathias Vigolo, Caroline da Silva Pereira, Caroline Rodrigues Gonçalves, David Martins, Emerson Soares Maciel, Ericka Caroliny Roque, Fabiola Wunsch, Gislaine Schmitz, Hellen Borges de Vargas, Jadi Maristane Weber, Julia Prado Marques, Jusseli Amanda Magedanz, Kailane Silvestre da Luz, Luana Olinda Kuhn, Luiza Eduarda Nicoletti, Manuela Jeske Netto, Mauricio Junior Fin, Michele Buhl, Ruan Pablo Signori Preto, Victor Halmenschlager, Yasmín Gonçalves Ribeiro</p>
-                              </div>
-                            </div>
-                        </div>    
+                      <nav>
+                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                          <button class="nav-link btn-tab active" id="nav-start-tab" data-bs-toggle="tab" data-bs-target="#nav-start" type="button" role="tab" aria-controls="nav-start" aria-selected="true">Inicio</button>
+                          <button class="nav-link btn-tab " id="nav-development-tab" data-bs-toggle="tab" data-bs-target="#nav-development" type="button" role="tab" aria-controls="nav-development" aria-selected="false">Desenvolvimento</button>
+                          <button class="nav-link btn-tab " id="nav-goals-tab" data-bs-toggle="tab" data-bs-target="#nav-goals" type="button" role="tab" aria-controls="nav-goals" aria-selected="false">Objetivos</button>
+                          <button class="nav-link btn-tab " id="nav-credits-tab" data-bs-toggle="tab" data-bs-target="#nav-credits" type="button" role="tab" aria-controls="nav-credits" aria-selected="false">Créditos</button>
+                        </div>
+                      </nav>
+                      <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade tab-item show active" id="nav-start" role="tabpanel" aria-labelledby="nav-start-tab">
+                          <p>O jogo <strong>Mage Siel</strong> foi desenvolvido por alunos da <strong>Escola Padre Fernando</strong> e pelo professor <b>Igor dos Santos</b> (Professor de Física e Matemática da escola). E atualmente você pode jogar o nosso jogo em qualquer sistema operacional para computador(Não compátivel com celulares).</p>
+                          <p>O jogo é totalmente gratuito e você pode baixar ele no botão de Download a seguir. Esperamos que você goste do jogo e se divirta. Se você for bom, talvez até consiga terminá-lo.</p>
+                          <p>Boa sorte!</p>
+                        </div>
+                        <div class="tab-pane fade tab-item" id="nav-development" role="tabpanel" aria-labelledby="nav-development-tab">
+                          <p>O projeto <strong>“Game na escola”</strong> tem como foco principal apresentar uma experiência de desenvolvimento de games como ferramenta de aprendizagem.</p>
+                          <p>Realizada com um grupo de alunos do 1º e 2° ano do ensino médio,o projeto procurou desenvolver um jogo de ação do tipo “plataforma 2D”  elaborado desde a parte artística (desenhos e cenário feito pelos próprios alunos) até a parte da lógica de programação utilizada no jogo e na construção do site (de autoria do aluno do 2° ano <strong>Ruan Signori</strong>) conteúdo este que faz parte da grade curricular do novo ensino médio.</p>
+                        </div>
+                        <div class="tab-pane fade tab-item" id="nav-goals" role="tabpanel" aria-labelledby="nav-goals-tab">
+                          <p>“É preciso abrir os sistemas de ensino a novas ideias. Em vez da homogeneidade e da rigidez, a diferença e a mudança” (Nóvoa - 2009).</p> 
+                          <p>Assim, um grande desafio da escola é proporcionar diferentes interfaces entre as linguagens contemporâneas, de forma que os jovens possam viver e interagir nesse mundo globalizado. Instruindo-os sob os aspectos tecnológicos, éticos, humanos e culturais, para que possam exercer sua cidadania de forma plena e busquem o conhecimento com autonomia e esse foi o grande intuito do projeto, não podendo deixar de citar os nomes dos alunos envolvidos:</p>
+                        </div>
+                        <div class="tab-pane fade tab-item" id="nav-credits" role="tabpanel" aria-labelledby="nav-credits-tab">
+                          <p>Professor: Igor dos Santos( Matemática e física)
+                            1° ano : Andrey de Freitas da Fontoura, Catielen Nunes Padilha , Clamine Horst, Eduardo Lima de Vargas, Evellyn de Aguiar Laguna, Georgia Vigolo, Juan Felício dos Santos, Kalebe Augusto Benke, Karine Guterres Conrado, Kauã Lappe, Kétchuly da Silva Machado, Luiz Roberto de França Menezes, Maria Eduarda da Rosa da Silva, Matheus Luan Mella, Vitória Campos Silva, Vitória Silva de Oliveira.
+                            
+                            2° ano : Ana Maria Zart, Bruno Mathias Vigolo, Caroline da Silva Pereira, Caroline Rodrigues Gonçalves, David Martins, Emerson Soares Maciel, Ericka Caroliny Roque, Fabiola Wunsch, Gislaine Schmitz, Hellen Borges de Vargas, Jadi Maristane Weber, Julia Prado Marques, Jusseli Amanda Magedanz, Kailane Silvestre da Luz, Luana Olinda Kuhn, Luiza Eduarda Nicoletti, Manuela Jeske Netto, Mauricio Junior Fin, Michele Buhl, Ruan Pablo Signori Preto, Victor Halmenschlager, Yasmín Gonçalves Ribeiro.
+                            </p>
+                        </div>
+                      </div>
                     </div>
                     <div class="item-download">
                         <img src="src/assets/img/history/mage-siel-boss.webp" class="img-development-game fluid">
