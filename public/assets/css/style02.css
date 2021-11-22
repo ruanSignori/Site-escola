@@ -189,3 +189,10 @@ footer p, footer a {
       transform: translateX(0%);
     }
 }
+
+@keyframes HidenElement {
+    to {
+        transform: opacity linear;
+        transform: translateX(125px);
+    }
+}

@@ -1,8 +1,14 @@
 
 const to_top = document.querySelector('.smooth-to-top');
+
 window.addEventListener('scroll', () => {
-  to_top.style.opacity = 1;
-  to_top.style.animation = "fadeVisibilityRight 0.7s";
+  if (scrollY > 100) {
+    to_top.style.opacity = 1;
+    to_top.style.animation = "fadeVisibilityRight 0.7s";
+  } else {
+    to_top.style.opacity = 0;
+    to_top.style.animation = "HidenElement ease 0.7s";
+  }
 })
 
 to_top.addEventListener('click', () => {
