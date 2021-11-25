@@ -28,7 +28,7 @@ body {
 header {
     height: 43vh;
     width: 100%;
-    background: url(../../../src/assets/img/fundo-Site.webp); /*1500x450px */
+    background: url(../../../src/assets/img/fundo-Site.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -239,7 +239,7 @@ img {
 
 .content-2 {
     margin: auto;
-    background-color: #000000f5;
+    background-color: var(--bs-gray-900);
     padding: 80px 70px 100px 100px;
     width: 100%;
     display: flex;
