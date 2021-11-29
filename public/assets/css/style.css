@@ -572,6 +572,12 @@ footer p, footer a {
     }
 }
 
+@media (max-width: 525px) {
+    .nav-tabs .nav-link span {
+        display: none;
+    }
+}
+
 @media (max-width: 415px) {
     header .span-animated {
         font-size: 2.5em;
