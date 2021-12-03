@@ -20,7 +20,7 @@ to_top.addEventListener('click', () => {
 
 const download = document.querySelector('.download');
 download.addEventListener('click', () => {
-  download.setAttribute('href', `http://download855.mediafire.com/326l2aapk7lg/wp2wdog1gyklajj/MageSiel.rar`);
+  download.setAttribute('href', `https://download855.mediafire.com/326l2aapk7lg/wp2wdog1gyklajj/MageSiel.rar`);
   download.setAttribute('download', 'MageSiel');
 });
 
