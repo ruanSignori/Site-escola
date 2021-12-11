@@ -1,4 +1,4 @@
-import '../../node_modules/scrollreveal/dist/scrollreveal.es'
+
 //Botão de subir para o topo da página
 const to_top = document.querySelector('.smooth-to-top');
 window.addEventListener('scroll', () => {
@@ -25,7 +25,3 @@ download.addEventListener('click', () => {
 
 download.removeAttribute('href');
 download.removeAttribute('download');
-
-ScrollReveal().reveal('.container-1', {
-  reset: true
-})
