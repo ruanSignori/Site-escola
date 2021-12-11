@@ -178,10 +178,10 @@ footer p, footer a {
     background-color: #094d85;
 }
 
-@keyframes fadeVisibilityRight {
+@keyframes fadeVisibilityLeft {
     0% {
       opacity: 0;
-      transform: translateX(40%);
+      transform: translateX(-40%);
     }
     100% {
       opacity: 1;
@@ -191,7 +191,11 @@ footer p, footer a {
 }
 
 @keyframes HidenElement {
+    from {
+        opacity: 1;
+    }
     to {
+        opacity: 0;
         transform: opacity linear;
         transform: translateX(125px);
     }

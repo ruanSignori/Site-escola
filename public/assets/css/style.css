@@ -70,6 +70,29 @@ header .span-animated-school {
     font-family: var(--font) !important;
 }
 
+.link-styled {
+    background-color: transparent;
+    border: none;
+    text-decoration: none;
+    transform: scale(0.9);
+    transition: all ease 0.3s;
+}
+    
+.link-styled::after {
+    content: " ";
+    width: 0%;
+    height: 2px;
+    background-color: var(--bs-gray-900);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all 0.2s ease-in-out;
+}
+    
+.link-styled:hover::after {
+    width: 100%;
+}
+
 main {
     margin: auto;
     max-width: 100%;
@@ -79,7 +102,7 @@ main {
 }
 
 p {
-    margin: 15px 10px;
+    margin: 15px 0px;
     color:  var(--cor5);
     text-align: justify;
     font-size: 1.1em;
@@ -242,19 +265,23 @@ img {
     background-color: var(--bs-gray-900);
     padding: 80px 70px 100px 100px;
     width: 100%;
+    min-height: 105vh;
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-start;
+    align-items: center;
     gap: 200px;
 }
 
 .centralized-paragraph {
-    margin-left: -40px;
     margin-top: 50px;
+    height: 100%;
+    display: grid;
+    grid-row: auto;
 }
 
 .content-child-1 {
-    max-width: 100%;
+    max-width: 100%;    
+    height: 100%;
 }
 
 .content-child-2 {
@@ -277,6 +304,7 @@ img {
 
 .content-2 p {
     color: #ffffff;
+    line-height: 32px;
 }
 
 .txt-cont {
@@ -284,7 +312,6 @@ img {
     font-size: 2.5em;
     font-family: var(--fontTitulo);
 }
-
 
 .development-game {
     max-width: 100%;
@@ -505,16 +532,8 @@ footer p, footer a {
 }
 
 @media (max-width: 1065px) {
-    .centralized-paragraph {
-        max-width: 100%;
-    }
-
     .context-carousel {
         max-width: 80%;
-    }
-
-    .content-2 {
-        gap: 20px;
     }
 
     .carousel{
@@ -522,20 +541,13 @@ footer p, footer a {
     }
 }
 
-@media (max-width: 834px) {
-    .item-download {
-        max-width: 80%;
-    }
-}
-
-@media (max-width: 804px) {
+@media (max-width: 1044px) {
     .content-1 .title {
         margin: auto; 
         text-align: center;
         width: max-content;
     }
 }
-
 
 @media (max-width: 644px) {
     .item-download {
@@ -642,7 +654,11 @@ footer p, footer a {
 }
 
 @keyframes HidenElement {
+    from {
+        opacity: 1;
+    }
     to {
+        opacity: 0;
         transform: opacity linear;
         transform: translateX(125px);
     }
