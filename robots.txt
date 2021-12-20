@@ -1,0 +1,7 @@
+Sitemap: https://gamepadrefernando.com.br
+
+User-agent: *
+Allow: /
+Dissallow: /src/
+Dissallow: package.json
+Dissallow: package-lock.json
