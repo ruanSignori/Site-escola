@@ -16,13 +16,3 @@ to_top.addEventListener('click', () => {
       behavior: 'smooth'
   });
 });
-
-const download = document.querySelector('.download');
-
-download.addEventListener('click', () => {
-  download.setAttribute("href", 'https://github.com/ruanSignori/Site-escola/blob/master/src/downloads/MageSiel.rar');
-  download.setAttribute('download', 'MageSiel');
-});
-
-download.removeAttribute('href');
-download.removeAttribute('download');
